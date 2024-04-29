@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let Browser='korean'
+        if(Browser === 'korean'){
+         documnet.getElementbyID('lblAge').innerText = '나이';
+        }
+        else{
+            document.getElementById('iblAge').innerText = 'How old?';
+        }
+    </script>
+</head>
+<body>
+    <form action="aaaa.js" method="post">
+        이름 : <input id="sName" type="text" title="이름"><br>
+        <label id="ivlAge">나이</label> : <input id="sAge" tupe="text "title="나이">
+        <input type="button" value="신고하기">
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
