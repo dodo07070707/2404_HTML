@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:visited{
+            color:aqua;
+        }
+        a:hover{
+            color:pink;
+        }
+        a:active{
+            color:green;
+        }
+        #moon{
+            font-weight: lighter !important;
+        }
+        li{
+            color:red;
+        }
+        #tree li ol li{
+            color:black;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap');
+        .nanum-font{
+            font-family: 'Nanum Pen Script','궁서체';
+        }
+        .a1{
+            font-variant: small-caps;
+            font-style : italic;
+            text-decoration: underline dotted;
+            text-transform: capitalize;
+        }
+
+    </style>
+</head>
+<body class="nanum-font">
+    <ul>
+        <li class="a1">개나리 dogmelee</li>
+        <li>dogmelee DOGMELEE 민들레</li>
+        <li>벛꽃</li>
+    </ul>
+    <ol id="tree"> 나무야나무야
+        <li>버드나무</li>
+        <li>느티나무</li>
+            <ol>
+                <li>큰 느티나무</li>
+                <li>어린 느티나무</li>
+            </ol>
+        <li>소나무</li>
+    </ol>
+    <a href="http:naver.com" style="font-weight:bolder" id="moon">문석호</a> &nbsp; VS
+    <a href="http:daum.net">조성민</a>
+</body>
+</html>
