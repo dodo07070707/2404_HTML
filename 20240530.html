@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadow1{
+            color:blue;
+            text-shadow: 1px 3px 3px black, 1px 5px 3px darkgrey, 1px 7px 3px yellow, 1px 9px 3px red;
+        }
+        header h1{
+            border-bottom: 1px solid red;
+        }
+        nav{
+            border-right: 1px solid blue;
+            width : 200px;
+            height : 600px;
+            float : left;
+        }
+        article{
+            float : left;
+            padding: 20px;
+            width:100px;
+        }
+        .content{
+            float : left;
+            border : 1px solid #ccc;
+            width : 300px;
+            white-space:nowrap;
+            overflow : hidden;
+            background-color: red;
+            text-overflow: ellipsis;
+        }
+        .content:hover {
+            overflow:visible;
+            background-color: pink;
+        }
+        .bg1{
+            border : 1px dotted black;
+            float : left;
+            width : 200px;
+            height: 150px;
+            background-color: yellow;
+            background-clip : content-box;
+            padding : 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="shadow1">한국디지털미디어고등학교</h1>
+    <header>
+        <h1>웹프로그래밍과 2-4반 문석호</h1>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Introduce</a></li>
+            <li><a href="#">My HomeTown</a></li>
+            <li><a href="#">My Dream</a></li>
+        </ol>
+    </nav>
+    <article>
+        <h2>Home</h2>
+            <div>안녕하세요 석호에요</div>
+        <h2>Introduce</h2>
+            <div>나는 김포에 산다.</div>
+        <h2>My Home Town</h2>
+            <div>김포시 고촌읍</div>
+        <h2>My Dream</h2>
+            <div>우주대해적</div>
+    </article>
+    <p class="content">본문의 문장이 설정된 너비를 넘어설 경우에도 줄바꿈이 된다. 그러니 white-space 속성을 이용하면 줄바꿈 시키지 않고 옆으로 튀어 나가버린다.</p>
+    <div class="bg1">
+        2학년 4반 문석호는 지금 못나간다.<br>
+        나갈 길이 없다.
+    </div>
+</body>
+</html>
